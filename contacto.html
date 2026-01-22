@@ -1,52 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto - Ximena Jaramillo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<body data-page="contacto">
+    <canvas id="particlesCanvas"></canvas>
+
     <header>
-        <mark><h1><n>Portafolio</n></h1></mark> 
         <nav>
-            <a href="index.html">Inicio </a>
-            <a href="proyecto.html">Proyectos</a>
-            <a href="contacto.html">Contacto </a>
+            <div class="logo">
+                <i class="fas fa-envelope"></i> CONTACTO
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyecto.html">Proyectos</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>Contacto</h1>
-        <p>
-            El mejor lugar para conocer mi trabajo y ponerte en contacto conmigo es mi perfil de GitHub.
-            Allí encontrarás mis proyectos, mi actividad y la evolución de mi aprendizaje en Ingeniería de Software.
-        </p>
-        <p>
-            Puedes visitar mi perfil aquí:
-            <a href="https://github.com/Jaramc" target="_blank">github.com/Jaramc</a>
-        </p>
-
-        <div>
-            <h2>Envíame un mensaje</h2>
+    <main>
+        <div class="page-title">
+            <h1>¡Hablemos!</h1>
             <p>
-                Déjame tus datos y tus dudas, y me pondré en contacto contigo lo antes posible.
+                El mejor lugar para conocer mi trabajo y ponerte en contacto conmigo es mi perfil de GitHub.
+                Allí encontrarás mis proyectos, mi actividad y la evolución de mi aprendizaje en Ingeniería de Software.
             </p>
-            <textarea
-                rows="5"
-                cols="40"
-                placeholder="Cuéntame en qué puedo ayudarte y cómo puedo contactarte."
-            ></textarea>
         </div>
 
-        <p>
-            Gracias por tu interés en mi trabajo. Sigo aprendiendo, creando y mejorando cada día.
-        </p>
-    </section>
+        <div class="contact-grid">
+            <div class="contact-card glass-card">
+                <div class="contact-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h3>Mi GitHub</h3>
+                <p>
+                    Descubre todos mis proyectos, contribuciones y mi journey como desarrolladora.
+                    Es la mejor forma de ver mi progreso y estilo de código.
+                </p>
+                <a href="https://github.com/Jaramc" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                    Visitar mi GitHub
+                </a>
+            </div>
+
+            <div class="contact-form glass-card">
+                <h3 class="form-title">
+                    <i class="fas fa-paper-plane icon-primary"></i>
+                    Envíame un mensaje
+                </h3>
+                <p class="form-description">
+                    Déjame tus datos y tus dudas, y me pondré en contacto contigo lo antes posible.
+                </p>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">
+                            <i class="fas fa-user"></i> Tu nombre
+                        </label>
+                        <input type="text" id="nombre" placeholder="¿Cómo te llamas?" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i> Tu email
+                        </label>
+                        <input type="email" id="email" placeholder="tu@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">
+                            <i class="fas fa-comment"></i> Tu mensaje
+                        </label>
+                        <textarea id="mensaje" placeholder="Cuéntame en qué puedo ayudarte y cómo puedo contactarte..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="thank-you-section">
+            <h3 class="thank-you-title">
+                <i class="fas fa-heart"></i> Gracias por tu interés
+            </h3>
+            <p class="thank-you-text">
+                Sigo aprendiendo, creando y mejorando cada día. 
+                ¡Me emociona la posibilidad de colaborar en nuevos proyectos!
+            </p>
+        </div>
+    </main>
 
     <footer>
-        Ximena Jaramillo Cárdenas
-        Aprendiendo, creando y mejorando cada día
+        <p>
+            <strong>Ximena Jaramillo Cárdenas</strong><br>
+            <i class="fas fa-heart"></i> 
+            Aprendiendo, creando y mejorando cada día
+        </p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="portfolio.js"></script>
 </body>
 </html>

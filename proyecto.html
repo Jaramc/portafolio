@@ -1,46 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
+    <title>Proyectos - Ximena Jaramillo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<body data-page="proyectos">
+    <canvas id="particlesCanvas"></canvas>
+
     <header>
-        <mark><h1><n>Proyectos</n></h1></mark> 
         <nav>
-            <a href="index.html">Inicio </a>
-            <a href="proyecto.html">Proyectos</a>
-            <a href="contacto.html">Contacto </a>
+            <div class="logo">
+                <i class="fas fa-folder-open"></i> PROYECTOS
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyecto.html" class="active">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
-    <p><i>
-        Aquí encontrarás una selección de proyectos que he desarrollado durante mi formación en Ingeniería de Software.
-        He organizado estos proyectos por tipo de tecnología para que puedas explorarlos de forma más clara y ordenada.
-    </i></p>
+    <main>
+        <div class="page-title">
+            <h1>Mis Proyectos</h1>
+            <p>
+                Aquí encontrarás una selección de proyectos que he desarrollado durante mi formación en Ingeniería de Software.
+                He organizado estos proyectos por tipo de tecnología para que puedas explorarlos de forma más clara y ordenada.
+            </p>
+        </div>
 
-    <section>
-        <h2>Proyectos en Python</h2>
-        <p>
-            En esta sección muestro simulaciones, ejercicios y pequeños sistemas desarrollados en Python,
-            donde practico lógica de programación, estructuras de datos y resolución de problemas.
-        </p>
-        <a href="python.html">Ver proyectos en Python</a>
-    </section>
-    
-    <section>
-        <h2>Proyectos web (HTML)</h2>
-        <p>
-            Aquí reúno proyectos donde trabajo con estructura de páginas web, organización de contenido
-            y primeras aproximaciones al desarrollo frontend.
-        </p>
-        <a href="html.html">Ver proyectos web (HTML)</a>
-    </section>
+        <div class="projects-grid">
+            <div class="project-card glass-card">
+                <div class="project-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <h2>Proyectos en Python</h2>
+                <p>
+                    Simulaciones, ejercicios y pequeños sistemas desarrollados en Python,
+                    donde practico lógica de programación, estructuras de datos y resolución de problemas.
+                </p>
+                <a href="python.html" class="project-link">
+                    <i class="fas fa-rocket"></i>
+                    Ver proyectos Python
+                </a>
+            </div>
+
+            <div class="project-card glass-card">
+                <div class="project-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h2>Proyectos Web</h2>
+                <p>
+                    Proyectos donde trabajo con estructura de páginas web, organización de contenido
+                    y primeras aproximaciones al desarrollo frontend con HTML, CSS y JavaScript.
+                </p>
+                <a href="html.html" class="project-link">
+                    <i class="fas fa-code"></i>
+                    Ver proyectos web
+                </a>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        Ximena Jaramillo Cárdenas
-        Aprendiendo, creando y mejorando cada día
+        <p>
+            <strong>Ximena Jaramillo Cárdenas</strong><br>
+            <i class="fas fa-heart"></i> 
+            Aprendiendo, creando y mejorando cada día
+        </p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="portfolio.js"></script>
 </body>
 </html>

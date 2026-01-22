@@ -1,20 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos_html</title>
+    <title>Proyectos Web - Ximena Jaramillo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<body data-page="web">
+    <canvas id="particlesCanvas"></canvas>
+
     <header>
-        <mark><h1><n>Portafolio</n></h1></mark> 
         <nav>
-            <a href="index.html">Inicio </a>
-            <a href="proyecto.html">Proyecto</a>
-            <a href="contacto.html">Contacto </a>
+            <div class="logo web-theme">
+                <i class="fas fa-code"></i> WEB DEV
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyecto.html">Proyectos</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="html.html" class="active web-theme">Web</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
-    </header> 
-    <a href="https://github.com/Jaramc/crudscope_html_mediapanel">Crud</a>
-    <a href="https://github.com/Jaramc/CrudActivity-_Mini-OS">Mini-OS</a>
+    </header>
+
+    <main>
+        <div class="page-title web-theme">
+            <h1><i class="fab fa-html5"></i> Proyectos Web</h1>
+            <p>
+                Exploración del desarrollo frontend donde trabajo con estructura de páginas web, 
+                organización de contenido y mis primeras aproximaciones al mundo del desarrollo web.
+            </p>
+        </div>
+
+        <div class="skills-section glass-card">
+            <h3 class="skills-title">🛠️ Tecnologías que estoy aprendiendo</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon html5">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="skill-name">HTML5</div>
+                    <div class="skill-level">Intermedio</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon css3">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="skill-name">CSS3</div>
+                    <div class="skill-level">Básico</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon javascript">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-level">Aprendiendo</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon git">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="skill-name">Git</div>
+                    <div class="skill-level">Básico</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon github">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="skill-name">GitHub</div>
+                    <div class="skill-level">Intermedio</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon responsive">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="skill-name">Responsive</div>
+                    <div class="skill-level">Aprendiendo</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-grid">
+            
+            <div class="project-card web-theme glass-card">
+                <div class="project-status">Completado</div>
+                <div class="project-header">
+                    <h3 class="project-title">
+                        <span class="project-icon web-theme"><i class="fas fa-database"></i></span>
+                        Crudscope MediaPanel
+                    </h3>
+                </div>
+                <p class="project-description">
+                    Panel de administración web para gestión de contenido multimedia. 
+                    Proyecto donde aplico conceptos de CRUD (Create, Read, Update, Delete) 
+                    en un entorno web con interfaz intuitiva.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge web-theme">HTML5</span>
+                    <span class="tech-badge web-theme">CSS3</span>
+                    <span class="tech-badge web-theme">CRUD</span>
+                    <span class="tech-badge web-theme">Media</span>
+                </div>
+                <a href="https://github.com/Jaramc/crudscope_html_mediapanel" target="_blank" class="project-link web-theme">
+                    <i class="fab fa-github"></i>
+                    Ver código
+                </a>
+            </div>
+
+            <div class="project-card glass-card">
+                <div class="project-status">Completado</div>
+                <div class="project-header">
+                    <h3 class="project-title">
+                        <span class="project-icon"><i class="fas fa-desktop"></i></span>
+                        Mini-OS Interface
+                    </h3>
+                </div>
+                <p class="project-description">
+                    Simulación de interfaz de sistema operativo construida con tecnologías web. 
+                    Un experimento creativo que combina diseño de UI/UX con funcionalidad 
+                    de gestión de datos tipo CRUD.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">UI/UX</span>
+                    <span class="tech-badge">Sistema</span>
+                </div>
+                <a href="https://github.com/Jaramc/CrudActivity-_Mini-OS" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i>
+                    Ver código
+                </a>
+            </div>
+
+            <div class="project-card glass-card">
+                <div class="project-status">Completado</div>
+                <div class="project-header">
+                    <h3 class="project-title">
+                        <span class="project-icon"><i class="fas fa-shopping-cart"></i></span>
+                        Store CRUD System
+                    </h3>
+                </div>
+                <p class="project-description">
+                    Sistema web para gestión de tienda online. Implementa operaciones CRUD 
+                    completas para manejo de productos, inventario y datos de clientes 
+                    con una interfaz web amigable.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">E-commerce</span>
+                    <span class="tech-badge">CRUD</span>
+                </div>
+                <a href="https://github.com/Jaramc/CRUDactivity-StoreCrud" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i>
+                    Ver código
+                </a>
+            </div>
+
+            <div class="project-card web-theme glass-card">
+                <div class="project-status">Completado</div>
+                <div class="project-header">
+                    <h3 class="project-title">
+                        <span class="project-icon web-theme"><i class="fas fa-database"></i></span>
+                        Historia de usuario
+                    </h3>
+                </div>
+                <p class="project-description">
+                    Adorable y divertido portafolio de mascotas
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge web-theme">HTML5</span>
+                    <span class="tech-badge web-theme">CSS3</span>
+                    <span class="tech-badge web-theme">CRUD</span>
+                    <span class="tech-badge web-theme">javascript</span>
+                </div>
+                <a href="https://github.com/Jaramc/Historia-de-usuario-html" target="_blank" class="project-link web-theme">
+                    <i class="fab fa-github"></i>
+                    Ver código
+                </a>
+            </div>
+
+                <div class="project-card web-theme glass-card">
+                <div class="project-status">Completado</div>
+                <div class="project-header">
+                    <h3 class="project-title">
+                        <span class="project-icon web-theme"><i class="fas fa-database"></i></span>
+                        Mini os Ubunto
+                    </h3>
+                </div>
+                <p class="project-description">
+                    Replica del sistema operativo ubunto
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge web-theme">HTML5</span>
+                    <span class="tech-badge web-theme">CSS3</span>
+                    <span class="tech-badge web-theme">CRUD</span>
+                    <span class="tech-badge web-theme">Media</span>
+                </div>
+                <a href="https://github.com/FaiberCamachoDev/Mini-OS-Ubuntu" target="_blank" class="project-link web-theme">
+                    <i class="fab fa-github"></i>
+                    Ver código
+                </a>
+            </div>
+
+            <div class="project-card glass-card">
+                <div class="project-status">¡Estás aquí!</div>
+                <div class="project-header">
+                    <h3 class="project-title">
+                        <span class="project-icon"><i class="fas fa-user"></i></span>
+                        Portfolio Personal
+                    </h3>
+                </div>
+                <p class="project-description">
+                    Este mismo sitio web! Mi portfolio personal construido con tecnologías web modernas,
+                    efectos de partículas, animaciones suaves y diseño responsive. 
+                    ¡Un showcase de todo lo que he aprendido!
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Canvas API</span>
+                    <span class="tech-badge">GSAP</span>
+                </div>
+                <a href="https://github.com/Jaramc/portafolio" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i>
+                    Ver código
+                </a>
+            </div>
+
+        </div>
+
+        <div class="learning-path glass-card">
+            <h3 class="learning-title">
+                <i class="fas fa-route"></i> Mi camino de aprendizaje web
+            </h3>
+            <div class="learning-grid">
+                <div class="learning-item html">
+                    <div class="learning-icon html"><i class="fab fa-html5"></i></div>
+                    <h4>Estructura</h4>
+                    <p>Comenzando con HTML semántico</p>
+                </div>
+                <div class="learning-item css">
+                    <div class="learning-icon css"><i class="fab fa-css3-alt"></i></div>
+                    <h4>Estilo</h4>
+                    <p>Aprendiendo diseño y layout</p>
+                </div>
+                <div class="learning-item js">
+                    <div class="learning-icon js"><i class="fab fa-js"></i></div>
+                    <h4>Interactividad</h4>
+                    <p>Explorando JavaScript</p>
+                </div>
+                <div class="learning-item future">
+                    <div class="learning-icon future"><i class="fas fa-rocket"></i></div>
+                    <h4>Futuro</h4>
+                    <p>React, Vue, y más!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section web">
+            <h3 class="cta-title web">
+                <i class="fas fa-code"></i> ¿Te gusta el desarrollo web?
+            </h3>
+            <p class="cta-description">
+                Estoy comenzando mi journey en el mundo frontend. ¡Cada línea de código es un nuevo aprendizaje!
+            </p>
+            <div class="cta-buttons">
+                <a href="https://github.com/Jaramc" target="_blank" class="cta-btn primary web">
+                    <i class="fab fa-github"></i>
+                    Ver más proyectos
+                </a>
+                <a href="python.html" class="cta-btn secondary web">
+                    <i class="fab fa-python"></i>
+                    Ver proyectos Python
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <strong>Ximena Jaramillo Cárdenas</strong><br>
+            <i class="fas fa-code"></i> 
+            Construyendo el web, un proyecto a la vez
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="portfolio.js"></script>
 </body>
 </html>
